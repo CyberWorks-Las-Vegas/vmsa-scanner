@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <!-- META TAGS -->
+
+  <!--
+      TODO:
+        Add metaData
+        Add fav.icon
+
+        determine how you are gonna cache and if htmlplugin will be easier
+    -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>VMSA</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- LINKS -->
+  <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+
+  <!-- for htmlWebpackPlugin to inject styles
+  <% for(var i=0; i < htmlWebpackPlugin.files.css.length; i++) {%>
+  <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[i] %>">
+  <% } %> -->
+
+  <!-- Needed for semantic ui -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- Scanner Modal -->
+  <div id="modal-root"></div>
+
+  <!-- Main App -->
+  <div id="root"></div>
+
+  <!-- for htmlWebpackPlugin to inject js
+  <% for(var i=0; i < htmlWebpackPlugin.files.js.length; i++) {%>
+  <script type=" text/javascript" src="<%= htmlWebpackPlugin.files.js[i] %>"></script>
+  <% } %> -->
+</body>
+
+</html>
